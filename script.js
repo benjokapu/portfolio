@@ -8,3 +8,6 @@ const observer = new IntersectionObserver(entries => {
 });
 
 document.querySelectorAll('.project-card, footer').forEach(el => observer.observe(el));
+
+
+
