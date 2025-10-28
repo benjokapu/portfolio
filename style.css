@@ -201,6 +201,30 @@ footer .socials a:hover {
   color: #fff;
 }
 
+.inspirations {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.inspirations span {
+  color: var(--accent-brown);
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.inspirations a {
+  color: var(--accent-brown);
+  text-decoration: none;
+  margin: 0 4px;
+  transition: color 0.3s;
+}
+
+.inspirations a:hover {
+  color: #fff;
+}
+
+
 /* ==== RESPONSIVE ==== */
 @media (max-width: 800px) {
   .hero {
