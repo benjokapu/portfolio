@@ -119,37 +119,72 @@ body {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
-/* ==== MY SKILLS ==== */
+
+/* chatgpt */
+/* ==== SKILLS SECTION ==== */
 .skills {
-  background: var(--card-bg);
-  padding: 60px 10%;
+  padding: 100px 10%;
+  background: var(--bg-dark);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
+
 .skills h2 {
   font-size: 2.5rem;
   color: var(--accent-brown);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.skills-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 40px;
-}
-.skill-item {
-  background: #222;
-  padding: 20px 30px;
-  border-radius: 10px;
+
+.skills-subtitle {
+  color: #bbb;
   font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  padding: 35px 25px;
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.45);
+}
+
+.skill-card h3 {
+  color: var(--accent-brown);
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.skill-card p {
   color: #ccc;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
-.skill-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills {
+    padding: 70px 6%;
+  }
+
+  .skills-grid {
+    gap: 20px;
+  }
 }
+
 
 
 
